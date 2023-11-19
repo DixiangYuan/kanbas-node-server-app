@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "kanbas-node-server-app",
+  "version": "1.0.0",
+  "description": "Node.js HTTP Web server for the Kanbas application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DixiangYuan/kanbas-react-web-app.git"
+  },
+  "keywords": [
+    "Node",
+    "REST",
+    "Server",
+    "HTTP"
+  ],
+  "author": "Dixiang Yuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DixiangYuan/kanbas-react-web-app/issues"
+  },
+  "homepage": "https://github.com/DixiangYuan/kanbas-react-web-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
