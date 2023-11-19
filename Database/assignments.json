@@ -1,11 +1,13 @@
 [
-    { "_id": "A101", "title": "Propulsion Assignment", "course": "RS101" },
-    { "_id": "A102", "title": "Combustion Analysis", "course": "RS101" },
-    { "_id": "A103", "title": "Nozzle Design Project", "course": "RS101" },
-    { "_id": "A201", "title": "Aerodynamics Quiz", "course": "RS102" },
-    { "_id": "A202", "title": "Flow Analysis", "course": "RS102" },
-    { "_id": "A203", "title": "Heating Analysis", "course": "RS102" },
-    { "_id": "A301", "title": "Structural Design Task", "course": "RS103" },
-    { "_id": "A302", "title": "Orbital Calculations", "course": "RS103" },
-    { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" }
-  ]
+  { "_id": "A101", "title": "A1 SETUP", "dueDate": "2022-09-18", "points":"100", 
+  "availableFromDate": "Sep 18, 2022", "availableUntilDate": "Sep 18, 2022",
+  "course": "RS101" },
+  { "_id": "A102", "title": "A2 HTML", "dueDate": "2022-09-18", "points":"100", "course": "RS101" },
+  { "_id": "A103", "title": "A3 CSS",  "dueDate": "2022-09-18", "points":"100", "course": "RS101" },
+  { "_id": "A201", "title": "A4 BOOTSTRAP",  "dueDate": "2022-09-18", "points":"100", "course": "RS102" },
+  { "_id": "A202", "title": "A5 JAVASCRIPT",  "dueDate": "2022-09-18", "points":"100", "course": "RS102" },
+  { "_id": "A203", "title": "A6 REACT",  "dueDate": "2022-09-18", "points":"100", "course": "RS102" },
+  { "_id": "A301", "title": "Structural Design Task",  "dueDate": "2022-09-18", "points":"100", "course": "RS103" },
+  { "_id": "A302", "title": "Orbital Calculations",  "dueDate": "2022-09-18", "points":"100", "course": "RS103" },
+  { "_id": "A303", "title": "Systems Engineering Exam",  "dueDate": "2022-09-18", "points":"100", "course": "RS103" }
+]

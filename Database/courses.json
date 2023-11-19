@@ -1,17 +1,28 @@
 [
-    { "_id": "RS101",
-      "name": "Rocket Propulsion", "number": "RS4550", "startDate": "2023-01-10",
-      "endDate": "2023-05-15", "year": "2023", "month":"01", "section": "_1",
-      "semester": "Fall", "sem": "FA23"
-    },
-    { "_id": "RS102",
-      "name": "Aerodynamics", "number": "RS4560", "startDate": "2023-01-10", 
-      "endDate": "2023-05-15", "year": "2023", "month":"01", "section": "_1",
-      "semester": "Fall", "sem": "FA23"
-    },
-    { "_id": "RS103",
-      "name": "Spacecraft Design", "number": "RS4570", "startDate": "2023-01-10",
-       "endDate": "2023-05-15", "year": "2023", "month":"01", "section": "_2",
-       "semester": "Fall", "sem": "FA23"
-    }
-  ]
+  { "_id": "RS101",
+    "name": "Rocket Propulsion", "number": "RS4550", "startDate": "2023-01-10",
+    "endDate": "2023-05-15", "section": "123410", "term": "Fall 2023"
+  },
+  { "_id": "RS102",
+    "name": "Aerodynamics", "number": "RS4560", "startDate": "2023-01-10", "endDate": "2023-05-15",
+    "section": "123411", "term": "Fall 2023"
+  },
+  { "_id": "RS103",
+    "name": "Spacecraft Design", "number": "RS4570", "startDate": "2023-01-10", "endDate": "2023-05-15",
+    "section": "123412", "term": "Fall 2023"
+  },
+  { "_id": "RS104",
+    "name": "Web Development", "number": "RS4580", "startDate": "2023-01-10", "endDate": "2023-05-15",
+    "section": "123413", "term": "Fall 2023"
+  },
+  {
+    "_id": "RS105",
+    "name": "Spacecraft Design", "number": "RS4590", "startDate": "2023-01-10", "endDate": "2023-05-15",
+    "section": "123414", "term": "Fall 2023"
+  },
+  {
+    "_id": "RS106",
+    "name": "Spacecraft Design", "number": "RS4600", "startDate": "2023-01-10", "endDate": "2023-05-15",
+    "section": "123415", "term": "Fall 2023"
+  }
+]
