@@ -7,12 +7,12 @@ import cors from "cors";
 import ModuleRoutes from "./modules/routes.js";
 const app = express();
 Hello(app);
-app.use(cors);
-// app.use(
-//     cors({
-//       credentials: true,
-//       origin: process.env.FRONTEND_URL
-//   }) );
+// app.use(cors);
+app.use(
+    cors({
+      credentials: true,
+      origin: process.env.FRONTEND_URL
+  }) );
 app.use(express.json());
 CourseRoutes(app);
 ModuleRoutes(app);

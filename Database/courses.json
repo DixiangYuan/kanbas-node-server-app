@@ -1,7 +1,7 @@
 [
   { "_id": "RS101",
-    "name": "Rocket Propulsion", "number": "RS4550", "startDate": "2023-01-10",
-    "endDate": "2023-05-15", "section": "123410", "term": "Fall 2023"
+    "name": "Rocket Propulsion", "number": "RS4550", "startDate": "2023-01-10", "endDate": "2023-05-15",
+     "section": "123410", "term": "Fall 2023"
   },
   { "_id": "RS102",
     "name": "Aerodynamics", "number": "RS4560", "startDate": "2023-01-10", "endDate": "2023-05-15",
