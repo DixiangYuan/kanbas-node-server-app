@@ -57,7 +57,9 @@ app.use(
     resave: false,
     saveUninitialized: false,
     store: MongoStore.create({
-      mongoUrl: process.env.DB_CONNECTION_STRING
+      mongoUrl: process.env.DB_CONNECTION_STRING,
+      ttl: 14 * 24 * 60 * 60,
+      autoRemove: 'native' 
     })
   }
   if (process.env.NODE_ENV !== 'development') {
