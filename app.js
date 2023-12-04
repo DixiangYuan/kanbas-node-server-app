@@ -8,6 +8,7 @@ import UserRoutes from "./users/routes.js";
 import cors from "cors";
 import ModuleRoutes from "./modules/routes.js";
 import session from 'express-session';
+import MongoStore from "connect-mongo";
 const DB_CONNECTION_STRING = 'mongodb://sean:sean123@ac-la5nrbf-shard-00-00.l8crz4b.mongodb.net:27017,ac-la5nrbf-shard-00-01.l8crz4b.mongodb.net:27017,ac-la5nrbf-shard-00-02.l8crz4b.mongodb.net:27017/kanbas?replicaSet=atlas-phooid-shard-0&ssl=true&authSource=admin';
 const CONNECTION_STRING =
   process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas';
@@ -55,6 +56,9 @@ app.use(
     secret: 'any string',
     resave: false,
     saveUninitialized: false,
+    store: MongoStore.create({
+      mongoUrl: process.env.DB_CONNECTION_STRING
+    })
   }
   if (process.env.NODE_ENV !== 'development') {
     app.set('trust proxy', 1) // trust first proxy
