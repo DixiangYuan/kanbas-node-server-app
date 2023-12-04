@@ -8,9 +8,9 @@ import UserRoutes from "./users/routes.js";
 import cors from "cors";
 import ModuleRoutes from "./modules/routes.js";
 import session from 'express-session';
-const DB_CONNECTION_STRING = 'mongodb+srv://sean:sean123@users-data.l8crz4b.mongodb.net/kanbas?retryWrites=true&w=majority';
+const DB_CONNECTION_STRING = 'mongodb://sean:sean123@ac-la5nrbf-shard-00-00.l8crz4b.mongodb.net:27017,ac-la5nrbf-shard-00-01.l8crz4b.mongodb.net:27017,ac-la5nrbf-shard-00-02.l8crz4b.mongodb.net:27017/kanbas?replicaSet=atlas-phooid-shard-0&ssl=true&authSource=admin';
 const CONNECTION_STRING =
-  DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas';
+  process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas';
 // const CONNECTION_STRING = 'mongodb://127.0.0.1:27017/kanbas'
 mongoose.connect(CONNECTION_STRING);
 const db = mongoose.connection;
@@ -49,7 +49,7 @@ Hello(app);
 app.use(
     cors({
       credentials: true,
-      origin: 'http://localhost:3000',
+      origin: [process.env.FRONTEND_URL, 'http://localhost:3000'],
   }) );
   const sessionOptions = {
     secret: 'any string',
