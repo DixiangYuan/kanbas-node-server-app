@@ -40,7 +40,9 @@ function UserRoutes(app) {
     const status = await dao.updateUser(id, newUser);
     const currentUser = await dao.findUserById(id);
     req.session["currentUser"] = currentUser;
-    res.json(status);
+    req.session.save(()=>{
+      res.json(status);
+    })
   };
 
   const updateFirstName = async (req, res) => {
@@ -65,7 +67,10 @@ function UserRoutes(app) {
     if (user) {
       const currentUser = user;
       req.session["currentUser"] = currentUser;
-      res.json(user);
+      console.log(req.session)
+      req.session.save(()=>{
+        res.json(user);
+      })
     } else {
       res.sendStatus(403);
     }
@@ -83,7 +88,9 @@ function UserRoutes(app) {
     }
     const currentUser = await dao.createUser(req.body);
     req.session["currentUser"] = currentUser;
-    res.json(currentUser);
+    req.session.save(()=>{
+      res.json(currentUser);
+    })
   };
 
   const account = async (req, res) => {
