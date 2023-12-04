@@ -55,6 +55,7 @@ app.use(
     secret: 'any string',
     resave: false,
     saveUninitialized: false,
+    httpOnly: false
   }
   if (process.env.NODE_ENV !== 'development') {
     sessionOptions.proxy = true
