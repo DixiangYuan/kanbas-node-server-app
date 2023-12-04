@@ -54,8 +54,8 @@ app.use(
   }) );
   const sessionOptions = {
     secret: 'any string',
-    resave: true,
-    saveUninitialized: true,
+    resave: false,
+    saveUninitialized: false,
     store: MongoStore.create({
       mongoUrl: process.env.DB_CONNECTION_STRING,
       ttl: 14 * 24 * 60 * 60,
