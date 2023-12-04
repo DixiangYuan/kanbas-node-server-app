@@ -38,8 +38,10 @@ import UserRoutes from "./users/routes.js";
 import cors from "cors";
 import ModuleRoutes from "./modules/routes.js";
 import session from 'express-session';
+const DB_CONNECTION_STRING = 'mongodb+srv://sean:sean123@users-data.l8crz4b.mongodb.net/?retryWrites=true&w=majority';
 const CONNECTION_STRING =
-  process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
+  DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas';
+// const CONNECTION_STRING = 'mongodb://127.0.0.1:27017/kanbas'
 mongoose.connect(CONNECTION_STRING);
 
 const app = express();
@@ -48,7 +50,7 @@ Hello(app);
 app.use(
     cors({
       credentials: true,
-      origin: process.env.FRONTEND_URL,
+      origin: 'http://localhost:3000',
   }) );
   const sessionOptions = {
     secret: 'any string',
