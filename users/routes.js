@@ -69,6 +69,7 @@ function UserRoutes(app) {
       req.session["currentUser"] = currentUser;
       console.log(req.session)
       req.session.save(()=>{
+        console.log("succeed")
         res.json(user);
       })
     } else {
