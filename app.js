@@ -55,14 +55,9 @@ app.use(
     secret: 'any string',
     resave: false,
     saveUninitialized: false,
-    proxy: true,
-    cookie: {
-      sameSite: 'none',
-      httpOnly: false,
-      secure: true,
-    }
   }
   if (process.env.NODE_ENV !== 'development') {
+    app.set('trust proxy', 1) // trust first proxy
     sessionOptions.proxy = true
     sessionOptions.cookie = {
       sameSite: 'none',
