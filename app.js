@@ -62,7 +62,7 @@ app.use(
     sessionOptions.cookie = {
       sameSite: 'none',
       httpOnly: false,
-      secure: true,
+      secure: false,
     }
   }
   app.use(session(sessionOptions))
