@@ -60,7 +60,7 @@ app.use(
     app.set('trust proxy', 1) // trust first proxy
     sessionOptions.proxy = true
     sessionOptions.cookie = {
-      sameSite: 'none',
+      sameSite: 'None; Secure',
       httpOnly: false,
       secure: false,
     }
