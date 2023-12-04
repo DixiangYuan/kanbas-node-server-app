@@ -61,8 +61,8 @@ app.use(
     sessionOptions.proxy = true
     sessionOptions.cookie = {
       sameSite: 'none',
-      httpOnly: false,
-      secure: false,
+      httpOnly: true,
+      secure: true,
     }
   }
   app.use(session(sessionOptions))
